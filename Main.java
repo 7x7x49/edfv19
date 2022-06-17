@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-interface Observable {                //всем переданным ему Observer-объектам сообщит о том, что событие наступило.
+interface Observable {                //издатель всем переданным ему Observer-объектам (подписчикам) сообщит о том, что событие наступило.
     void notifyObservers();           //При получении нового сообщения отправляется оповещение всем наблюдателям
     void regObserver(Observer o);
 }
